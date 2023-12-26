@@ -1,0 +1,516 @@
+*{
+  box-sizing:border-box;
+  /* font-family:Georgia, 'Times New Roman', Times, serif; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App{
+  /* background:linear-gradient(135deg, #000000, #060615); */
+  /* background-color: black; */
+}
+
+html,body{
+  margin:0rem;
+  padding:0rem;
+  font-size: 1rem;
+  width:100%;
+  overflow-x: hidden;
+ background:linear-gradient(to bottom right, #ffffff, #f5f5f5); 
+
+  
+}
+
+
+:root{
+  --primary-color:#03235b !important;
+  --dark-color:white;
+  --secondary-color:#141415 !important;
+  --text-primary:black;
+  --text-white:white;
+  --text-secondary:rgb(55, 53, 53);
+  --primary-bg:white;
+  --secondary-bg:gray;
+}
+
+.text-head{
+  color:var(--primary-color);
+}
+
+.text-para{
+  color:var(--secondary-color);
+}
+
+
+/* navigation bar css */
+
+
+.nav-item{
+  margin-left:1.3rem;
+}
+
+#myNav{
+    background: linear-gradient(to right, #4b6cb7, #182848) !important;
+}
+
+ul > .nav-item > a{
+  color:white;
+}
+
+/* carousel page or banner css */
+
+.top-gap{
+    margin-top:4.5rem;
+}
+
+/* first slider left  */
+.x{
+  height:88vh;
+  border:"1px solid black";
+  background-image: url('./assets/banner5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.fs-l-img-holder{
+  width:100%;
+  height:90%;
+  margin:auto;
+  object-fit: cover !important;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow:0 8px 16px 0 rgba(27, 14, 164, 0.1);
+  border-color:gray !important;
+}
+.fs-l-img-holder img{
+    width:100%;
+    height:100%;
+}
+/* fist slider right */
+.fs-r{
+  padding:4.2rem 0;
+  
+}
+
+.fs-r-head{
+  color:var(--primary-color);
+  /* font-size: 3.5rem; */
+}
+
+.fs-r-type-head{
+  color:var(--secondary-color);
+  font-size: 2.5rem;
+  color:rgb(2, 2, 70);
+}
+
+/* second slider banner css */
+.slick-dots{
+  bottom:-30px !important;
+}
+
+.circle{
+  width:40px;
+  border:1px solid black;
+  height:40px;
+  border-radius:50%;
+  position:absolute;
+}
+
+/* project section css */
+
+.section-heads{
+/* border:1px solid blue; */
+
+}
+
+.section-heads h1{
+  color:var(--primary-color);
+}
+.pendulum{
+  width:160px;
+  position: relative;
+  background-color:var(--primary-color);
+  border:1px solid var(--primary-color);
+}
+
+.to-fro{
+position:absolute;
+background-color: var(--primary-color);
+left:-1px;
+top:-3.5px;
+width:8px;
+height:8px;
+animation-name: toandfro;
+animation-direction: alternate-reverse;
+animation-duration: 6s;
+animation-delay: 3s;
+animation-iteration-count: infinite;
+}
+
+@keyframes toandfro {
+  0%,100%{
+    left:-1px;
+  }
+  50%{
+    left:158px;
+  }
+}
+
+.project-card-img-holder {
+  /* border:1px solid green !important; */
+  overflow: hidden;
+  width:95%;
+  margin:auto;
+  height:15rem;
+}
+
+.project-card-img-holder img{
+  width:100%;
+  height:100%;
+}
+
+
+.card:hover .card-img-top{
+  transform: scale(1.05);
+  transition:0.5s;
+}
+.card:hover{
+  /* background-color: #bfc0c2; */
+}
+
+.card:not(:hover) .card-img-top{
+  transition: 0.5s;
+}
+
+.card{
+  /* border:none !important; */
+  box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.1);
+}
+
+/* skill section css */
+
+.skillsection{
+  background:linear-gradient(rgb(230, 230, 255),white);
+}
+
+.skill-img-holder{
+  height:100px;
+  overflow: hidden;
+}
+
+.skill-img-holder img{
+  height:100%;
+}
+
+.each-skill:hover{
+  background-color: #cfcfd0;
+}
+
+.each-skill:hover .skill-img{
+  transform: scale(1.05);
+}
+.skill-img{
+  width:100%;
+}
+
+.each-skill{
+  background: linear-gradient(to right, #4b6cb7, #182848) !important;
+  color:white !important;
+}
+
+.skill-sliders{
+  overflow: hidden;
+}
+
+/* service section css */
+
+.service-image-holder{
+
+}
+
+.service-image-holder img{
+  width:100%;
+  height:100%;
+}
+
+.eachservice{
+    border:1px solid rgb(227, 226, 226);
+    padding:.5rem ;
+    border-radius:1rem;
+    box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.05);
+}
+
+#services a{
+  text-decoration:none !important;
+  color:var(--primary-color) !important;
+}
+.service-icon{
+  color:var(--primary-color);
+}
+
+/* testimony section css */
+
+.testimony-img-holder{
+    width:4rem;
+    height:4rem;
+    box-shadow:0px 8px 16px 0 rgba(0,0,0,0.2);
+    background-color:var(--primary-color);
+}
+
+.testimony-img-holder h1{
+ color:rgb(239, 238, 238) !important;
+}
+
+.staricon{
+  color:var(--primary-color);
+}
+
+.rating{
+  background-color: var(--primary-color);
+}
+
+
+
+.main-slider-div{
+  /* border:1px solid black; */
+}
+
+.card-main-div{
+  width:95% !important;
+  margin:auto;
+}
+
+.submit-review{
+  background-image:url("./assets/reviewwallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+label,input,textarea,select{
+  display:block;
+  width:95%;
+  margin:0.2rem 0.5rem !important;
+  border-radius:0.5rem;
+}
+
+select{
+  padding:0.5rem 0;
+}
+
+select:hover{
+  cursor: pointer;
+}
+
+label{
+  color:white;
+}
+
+input,textarea{
+padding:0.3rem 0.6rem;
+}
+
+textarea,input{
+  resize:none !important;
+  border:1px solid gray;
+}
+
+.form-feedback{
+  background: linear-gradient(to right, #102657, #305297) !important;
+}
+
+.form-star{
+  color:white ;
+  margin-right:.3rem;
+}
+
+.rated{
+  color:gray !important
+}
+
+/* contact section css */
+.form-contact{
+  background: linear-gradient(to right,#305297, #729bf4) !important;
+}
+
+.contact-section a{
+  text-decoration:none;
+  color:var(--primary-color);
+}
+
+.contact-section{
+ 
+}
+
+.contact-icon{
+  box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.1);
+}
+
+.c-icon{
+  font-size: 2rem;
+}
+
+.f-li{
+  margin:0.4rem 0 !important;
+}
+
+.footer{
+  background-color: #0b0b38;
+}
+
+.footer a{
+  color:white;
+}
+
+/* faq css */
+
+.faq-section{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+/* education section css here  */
+
+.education-section{
+  background:url('./assets/education.jpg') no-repeat center ;
+  background-size:cover;
+}
+
+.edu-card-img-holder{
+  /* border:1px solid black; */
+  width:10rem;
+  height:10rem;
+  margin:auto;
+  overflow: hidden;
+}
+
+.exp-section{
+  background:url('./assets/banner2.jpg') no-repeat center ;
+  background-size:cover;
+}
+
+/* experience section css */
+
+.exp-card-img-holder{
+  width:9rem;
+  height:9rem;
+}
+
+.exp-card-img-holder img{
+  width:100%;
+  height:100%;
+}
+
+
+/* projectPage section css */
+
+
+.projectpage h5,h4{
+  color :var(--primary-color);
+}
+
+/* bookmoviepage css */
+
+th,td{
+  border:1px solid rgb(147, 143, 143) !important;
+  }
+
+table{
+  border:1px solid green;
+  padding:5px;
+}
+
+th{
+  width:20% !important;
+  padding:0.5rem;
+}
+
+td{
+  text-align:center;
+}
+
+.myspinner{
+  height:70vh;
+}
+
+/* certificates css */
+
+#certificates{
+  /* background:linear-gradient(to right, rgb(238, 238, 255),white); */
+}
+.cert-display{
+  height:15rem;
+}
+
+.cert-display:hover{
+    cursor:pointer;
+}
+
+.cert-display img{
+  width:100%;
+  height:100%;
+}
+
+.zoomModal{
+  display: block;
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0rem;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content{
+  margin: auto;
+  margin-top:5%;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+}
+
+.zoomModal img{
+  width:100%;
+  height:auto;
+}
+
+.close-btn{
+    position:absolute;
+    top:1rem;
+    right:1rem;
+}
+
+/* experience detail page css */
+
+.exps-img-holder{
+    width:6rem;
+    height:6rem;
+}
+
+.exps-img-holder img{
+    width:100%;
+    height:100%;
+}
+
+/* chat section css */
+
+.chat-position {
+  bottom:2rem;
+  right:1rem;
+  position:fixed;
+  cursor:pointer;
+}
+
+.chat-bg{
+  background-color:var(--primary-color);
+}
+
+.cross{
+  top:-2rem;
+  right:0.5rem;   
+}
+
+.time-chat{
+  font-size:0.7rem;
+  color:rgb(219, 216, 216);
+}

@@ -1,0 +1,25 @@
+/* responsive css for banner  */
+
+@media screen and (max-width:1400px) {
+    .x{
+      height:auto;
+    }
+}
+
+@media screen and (min-width:1200px){
+.fs-l-img-holder{
+  width:60% !important;
+  height:80% !important;
+}
+}
+
+@media  screen and (max-width:768px){
+  .fs-r-para{
+    text-align: center;
+  }
+}
+@media screen and (max-width:567px){
+  .fs-l-img-holder{
+    height:100% !important;
+      }
+}
